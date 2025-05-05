@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
-declare type SearchParamProps = {
-  params: { [key: string]: string | string[] } & PageProps;
+
+type SearchParamProps = {
+  params: { id: string }; // Be specific about your params
   searchParams: { [key: string]: string | string[] | undefined };
-};
+} & PageProps;
 
 declare type AccessType = ["room:write"] | ["room:read", "room:presence:write"];
 
