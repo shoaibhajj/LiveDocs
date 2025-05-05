@@ -4,7 +4,7 @@ import { getClerkUsers } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import React from "react";
-
+export const dynamic = "force-dynamic";
 
 const Document = async ({ params }: SearchParamProps) => {
   const { id } = await params;
