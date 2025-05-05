@@ -9,13 +9,14 @@ import {
   SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
-import { Editor } from "@/components/editor/Editor";
 import ActiveCollaborators from "./ActiveCollaborators";
 import { Input } from "./ui/input";
 import Image from "next/image";
 import { updateDocument } from "@/lib/actions/room.actions";
 import Loader from "./Loader";
 import ShareModal from "./ShareModal";
+// import dynamic from 'next/dynamic';
+import { Editor } from "@/components/editor/Editor";
 
 function CollaborativeRoom({
   roomId,
